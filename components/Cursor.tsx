@@ -20,8 +20,8 @@ export default function Cursor() {
     function loop() {
       rx += (cx - rx) * 0.13;
       ry += (cy - ry) * 0.13;
-      dot.style.transform = `translate(${cx}px,${cy}px)`;
-      ring.style.transform = `translate(${rx}px,${ry}px)`;
+      dot!.style.transform = `translate(${cx}px,${cy}px)`;
+      ring!.style.transform = `translate(${rx}px,${ry}px)`;
       animId = requestAnimationFrame(loop);
     }
     animId = requestAnimationFrame(loop);
